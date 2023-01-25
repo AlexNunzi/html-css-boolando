@@ -8,7 +8,8 @@
 
 /* HEADER ------------------------------------------ */
 
-.debug header div, nav {
+.debug header div,
+.debug nav {
     border: 2px dashed #000000;
 }
 
@@ -56,8 +57,8 @@
 /* MAIN -------------------------------------------- */
 
 .debug main .main-content,
-.main-container,
-.feature-container{
+.debug .main-container,
+.debug .feature-container{
     border: 2px dashed #000000;
 }
 
@@ -93,29 +94,29 @@
 /* FOOTER ------------------------------------------ */
 
 .debug footer .footer-container,
-.footer-credits-container,
-.footer-links-container{
+.debug .footer-credits-container,
+.debug .footer-links-container{
     border: 2px dashed #FFFFFF;
 }
 
 .debug footer .footer-credits-container{
-    background-color: #FF6900;
+    /* background-color: #FF6900; */
 }
 
 .debug footer .footer-links-container{
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .debug footer .footer-credits-content{
-    background-color: violet;
-    height: 20px;
-    width: 200px;
+    /* background-color: violet; */
+    /* height: 20px; */
+    /* width: 200px; */
 }
 
 .debug footer .footer-links-content{
-    background-color: yellow;
-    height: 50px;
-    width: 200px;
+    /* background-color: yellow; */
+    /* height: 50px;
+    width: 200px; */
 }
 
 /* REGOLE DI CSS ----------------------------------- */
@@ -129,6 +130,17 @@
     font-family: sans-serif;
 }
 
+.horizontal-list{
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+}
+
+
+.white-link a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
 /* HEADER ------------------------------------------ */
 
@@ -143,24 +155,15 @@ header{
 header nav{
     display: flex;
     align-items: center;
+    padding: 0px 15px;
 }
 
 .col-nav{
     width: calc(100% / 3);
 }
 
-header ul{
-    display: flex;
-    list-style: none;
-}
-
-header a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
 
 .nav-left-content li{
-    font-size: 12px;
     margin-right: 8px;
 }
 
@@ -168,8 +171,12 @@ header a{
     padding: 5px 0px;
 }
 
-.nav-right-content{
-    text-align: right;
+.nav-right-content ul{
+    justify-content: flex-end;
+}
+
+.nav-right-content li{
+    margin-left: 5px;
 }
 
 .nav-left-content a{
@@ -298,17 +305,49 @@ footer{
     background-color: #1A1A1A;
     display: flex;
     align-items: center;
+    color: #FFFFFF;
 }
 
 .footer-container{
     display: flex;
     align-items: center;
+    padding: 0px 15px;
 }
 
 .footer-credits-container{
     width: calc(100% / 2);
 }
 
+.footer-credits-company{
+    font-weight: bold;
+}
+
+.footer-credits-content li{
+    margin: 8px 12px 0 0;
+}
+
+
 .footer-links-container{
     width: calc(100% / 2);
+    text-align: right;
 }
+
+.footer-links-content{
+    margin-left: auto;
+}
+
+.footer-links-content ul{
+    justify-content: flex-end;
+}
+
+.footer-links-content li{
+    font-size: 14px;
+    margin: 8px 0px 0px 10px;
+}
+
+.footer-links-content-heading{
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+
