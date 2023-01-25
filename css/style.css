@@ -63,18 +63,18 @@
 }
 
 .debug main .main-content{
-    /* background-color: red; */
+    background-color: red;
 }
 
 .debug main .main-content-img{
     /* width: 640px;*/
     /* height: 462px;  */
-    /* background-color: #FF6900; */
+    background-color: #FF6900;
 }
 
 .debug main .main-content-text{
     /* height: 80px; */
-    /* background-color: blue; */
+    background-color: blue;
 }
 
 .debug main .discount{
@@ -147,9 +147,14 @@
 
 header{
     height: 100px;
+    width: 100%;
     background-color: #FF6900;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 5px 0px #000000;
 }
 
 header nav{
@@ -198,6 +203,11 @@ nav i{
 
 /* MAIN -------------------------------------------- */
 
+main{
+    padding-top: 100px;
+}
+
+
 .main-container{
     display: flex;
     flex-wrap: wrap;
@@ -206,8 +216,8 @@ nav i{
 }
 
 .main-content{
-    width: calc(100% / 3);
-    padding: 15px;
+    width: calc(100% / 3 - 30px);
+    margin: 15px;
 }
 
 .main-content-img{
@@ -216,19 +226,13 @@ nav i{
 }
 
 
-.img-preview1{
-    position: relative;
-    top: 0px;
-    left: 0px;
+.img-preview1, .img-preview2{
     width: 100%;
+    display: block;
 }
 
 .img-preview2{
-    position: relative;
-    top: 0px;
-    left: 0px;
     display: none;
-    width: 100%;
 }
 
 
@@ -350,4 +354,15 @@ footer{
     font-size: 12px;
 }
 
+
+
+/* ANIMAZIONI -------------------------------------- */
+
+.main-content:hover .img-preview1{
+    display: none;
+}
+
+.main-content:hover .img-preview2{
+    display: block;
+}
 
