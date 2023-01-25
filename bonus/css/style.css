@@ -366,4 +366,6 @@ footer{
     display: block;
 }
 
-
+.like-icon:hover{
+    color: #FF0000;
+}
