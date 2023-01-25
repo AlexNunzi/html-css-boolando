@@ -67,7 +67,7 @@
 
 .debug main .main-content-img{
     /* width: 640px;*/
-    height: 462px; 
+    /* height: 462px;  */
     background-color: #FF6900;
 }
 
@@ -85,8 +85,8 @@
 }
 
 .debug main .like-icon{
-    height: 15px;
-    width: 15px;
+    /* height: 15px;
+    width: 15px; */
     background-color: #FFFFFF;
 }
 
@@ -208,27 +208,54 @@ nav i{
     position: relative;
 }
 
+.img-preview1{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.img-preview2{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: none;
+    width: 100%;
+}
+
+
 .feature-container{
     position: absolute;
     left: 0px;
     bottom: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
 }
 
 .discount{
     height: 100%;
     float: left;
     margin-right: 5px;
+    padding: 4px;
 }
 
 .green{
     height: 100%;
     float: left;
+    padding: 4px;
 }
 
 .like-icon{
     position: absolute;
     top: 10px;
     right: 0px;
+    color: #000000;
+}
+
+.like-icon{
+    text-decoration: none;
+    padding: 8px;
 }
 
 
