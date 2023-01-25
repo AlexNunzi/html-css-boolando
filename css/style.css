@@ -62,32 +62,32 @@
 }
 
 .debug main .main-content{
-    background-color: red;
+    /* background-color: red; */
 }
 
 .debug main .main-content-img{
     /* width: 640px;*/
     /* height: 462px;  */
-    background-color: #FF6900;
+    /* background-color: #FF6900; */
 }
 
 .debug main .main-content-text{
-    height: 80px;
-    background-color: blue;
+    /* height: 80px; */
+    /* background-color: blue; */
 }
 
 .debug main .discount{
-    background-color: red;
+    /* background-color: red; */
 }
 
 .debug main .green{
-    background-color: green;
+    /* background-color: green; */
 }
 
 .debug main .like-icon{
     /* height: 15px;
     width: 15px; */
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
 }
 
 /* FOOTER ------------------------------------------ */
@@ -208,6 +208,7 @@ nav i{
     position: relative;
 }
 
+
 .img-preview1{
     position: relative;
     top: 0px;
@@ -238,12 +239,14 @@ nav i{
     float: left;
     margin-right: 5px;
     padding: 4px;
+    background-color: #FF0000;
 }
 
 .green{
     height: 100%;
     float: left;
     padding: 4px;
+    background-color: #008000;
 }
 
 .like-icon{
@@ -251,11 +254,40 @@ nav i{
     top: 10px;
     right: 0px;
     color: #000000;
+    padding: 8px;
+    background-color: #FFFFFF;
 }
 
-.like-icon{
-    text-decoration: none;
-    padding: 8px;
+
+.main-content-text-brand{
+    font-size: 12px;
+}
+
+.main-content-text-name{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-content-text-price{
+    font-size: 12px;
+    font-weight: 700;
+    color: #FF0000;
+    display: inline-block;
+}
+
+.main-content-text-price::after{
+    content: '\00A0\20AC';
+}
+
+.main-content-text-oldprice{
+    font-size: 12px;
+    text-decoration: line-through;
+    display: inline-block;
+}
+
+.main-content-text-oldprice::after{
+    content: '\00A0\20AC';
 }
 
 
